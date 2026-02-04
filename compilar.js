@@ -8,13 +8,13 @@ const replaceRequirePlugin = {
     name: 'replace-require',
     setup(build) {
         build.onLoad({ filter: /vendor\.js$/ }, async (args) => {
-            console.log(`[Plugin] Procesando: ${args.path}`);
+            // console.log(`[Plugin] Procesando: ${args.path}`);
             let contents = await fs.promises.readFile(args.path, 'utf8');
             
             // Buscamos patrones como __require("@eslint-community/eslint-utils")
             const regex = /__require\("([^"]+)"\)/g;
             if (regex.test(contents)) {
-                console.log(`[Plugin] Parcheando imports en: ${path.basename(args.path)}`);
+                // console.log(`[Plugin] Parcheando imports en: ${path.basename(args.path)}`);
                 contents = contents.replace(regex, 'require("$1")');
             }
             
