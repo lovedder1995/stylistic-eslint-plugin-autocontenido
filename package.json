@@ -21,7 +21,9 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@eslint-community/eslint-utils": "^4.9.1",
     "@stylistic/eslint-plugin": "^5.7.1",
+    "@typescript-eslint/types": "^8.54.0",
     "esbuild": "^0.27.2"
   }
 }

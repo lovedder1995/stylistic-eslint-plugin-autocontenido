@@ -29,6 +29,2333 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
 ));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
+// node_modules/@eslint-community/eslint-utils/node_modules/eslint-visitor-keys/dist/eslint-visitor-keys.cjs
+var require_eslint_visitor_keys = __commonJS({
+  "node_modules/@eslint-community/eslint-utils/node_modules/eslint-visitor-keys/dist/eslint-visitor-keys.cjs"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    var KEYS2 = {
+      ArrayExpression: [
+        "elements"
+      ],
+      ArrayPattern: [
+        "elements"
+      ],
+      ArrowFunctionExpression: [
+        "params",
+        "body"
+      ],
+      AssignmentExpression: [
+        "left",
+        "right"
+      ],
+      AssignmentPattern: [
+        "left",
+        "right"
+      ],
+      AwaitExpression: [
+        "argument"
+      ],
+      BinaryExpression: [
+        "left",
+        "right"
+      ],
+      BlockStatement: [
+        "body"
+      ],
+      BreakStatement: [
+        "label"
+      ],
+      CallExpression: [
+        "callee",
+        "arguments"
+      ],
+      CatchClause: [
+        "param",
+        "body"
+      ],
+      ChainExpression: [
+        "expression"
+      ],
+      ClassBody: [
+        "body"
+      ],
+      ClassDeclaration: [
+        "id",
+        "superClass",
+        "body"
+      ],
+      ClassExpression: [
+        "id",
+        "superClass",
+        "body"
+      ],
+      ConditionalExpression: [
+        "test",
+        "consequent",
+        "alternate"
+      ],
+      ContinueStatement: [
+        "label"
+      ],
+      DebuggerStatement: [],
+      DoWhileStatement: [
+        "body",
+        "test"
+      ],
+      EmptyStatement: [],
+      ExperimentalRestProperty: [
+        "argument"
+      ],
+      ExperimentalSpreadProperty: [
+        "argument"
+      ],
+      ExportAllDeclaration: [
+        "exported",
+        "source"
+      ],
+      ExportDefaultDeclaration: [
+        "declaration"
+      ],
+      ExportNamedDeclaration: [
+        "declaration",
+        "specifiers",
+        "source"
+      ],
+      ExportSpecifier: [
+        "exported",
+        "local"
+      ],
+      ExpressionStatement: [
+        "expression"
+      ],
+      ForInStatement: [
+        "left",
+        "right",
+        "body"
+      ],
+      ForOfStatement: [
+        "left",
+        "right",
+        "body"
+      ],
+      ForStatement: [
+        "init",
+        "test",
+        "update",
+        "body"
+      ],
+      FunctionDeclaration: [
+        "id",
+        "params",
+        "body"
+      ],
+      FunctionExpression: [
+        "id",
+        "params",
+        "body"
+      ],
+      Identifier: [],
+      IfStatement: [
+        "test",
+        "consequent",
+        "alternate"
+      ],
+      ImportDeclaration: [
+        "specifiers",
+        "source"
+      ],
+      ImportDefaultSpecifier: [
+        "local"
+      ],
+      ImportExpression: [
+        "source"
+      ],
+      ImportNamespaceSpecifier: [
+        "local"
+      ],
+      ImportSpecifier: [
+        "imported",
+        "local"
+      ],
+      JSXAttribute: [
+        "name",
+        "value"
+      ],
+      JSXClosingElement: [
+        "name"
+      ],
+      JSXClosingFragment: [],
+      JSXElement: [
+        "openingElement",
+        "children",
+        "closingElement"
+      ],
+      JSXEmptyExpression: [],
+      JSXExpressionContainer: [
+        "expression"
+      ],
+      JSXFragment: [
+        "openingFragment",
+        "children",
+        "closingFragment"
+      ],
+      JSXIdentifier: [],
+      JSXMemberExpression: [
+        "object",
+        "property"
+      ],
+      JSXNamespacedName: [
+        "namespace",
+        "name"
+      ],
+      JSXOpeningElement: [
+        "name",
+        "attributes"
+      ],
+      JSXOpeningFragment: [],
+      JSXSpreadAttribute: [
+        "argument"
+      ],
+      JSXSpreadChild: [
+        "expression"
+      ],
+      JSXText: [],
+      LabeledStatement: [
+        "label",
+        "body"
+      ],
+      Literal: [],
+      LogicalExpression: [
+        "left",
+        "right"
+      ],
+      MemberExpression: [
+        "object",
+        "property"
+      ],
+      MetaProperty: [
+        "meta",
+        "property"
+      ],
+      MethodDefinition: [
+        "key",
+        "value"
+      ],
+      NewExpression: [
+        "callee",
+        "arguments"
+      ],
+      ObjectExpression: [
+        "properties"
+      ],
+      ObjectPattern: [
+        "properties"
+      ],
+      PrivateIdentifier: [],
+      Program: [
+        "body"
+      ],
+      Property: [
+        "key",
+        "value"
+      ],
+      PropertyDefinition: [
+        "key",
+        "value"
+      ],
+      RestElement: [
+        "argument"
+      ],
+      ReturnStatement: [
+        "argument"
+      ],
+      SequenceExpression: [
+        "expressions"
+      ],
+      SpreadElement: [
+        "argument"
+      ],
+      StaticBlock: [
+        "body"
+      ],
+      Super: [],
+      SwitchCase: [
+        "test",
+        "consequent"
+      ],
+      SwitchStatement: [
+        "discriminant",
+        "cases"
+      ],
+      TaggedTemplateExpression: [
+        "tag",
+        "quasi"
+      ],
+      TemplateElement: [],
+      TemplateLiteral: [
+        "quasis",
+        "expressions"
+      ],
+      ThisExpression: [],
+      ThrowStatement: [
+        "argument"
+      ],
+      TryStatement: [
+        "block",
+        "handler",
+        "finalizer"
+      ],
+      UnaryExpression: [
+        "argument"
+      ],
+      UpdateExpression: [
+        "argument"
+      ],
+      VariableDeclaration: [
+        "declarations"
+      ],
+      VariableDeclarator: [
+        "id",
+        "init"
+      ],
+      WhileStatement: [
+        "test",
+        "body"
+      ],
+      WithStatement: [
+        "object",
+        "body"
+      ],
+      YieldExpression: [
+        "argument"
+      ]
+    };
+    var NODE_TYPES2 = Object.keys(KEYS2);
+    for (const type of NODE_TYPES2) {
+      Object.freeze(KEYS2[type]);
+    }
+    Object.freeze(KEYS2);
+    var KEY_BLACKLIST = /* @__PURE__ */ new Set([
+      "parent",
+      "leadingComments",
+      "trailingComments"
+    ]);
+    function filterKey(key) {
+      return !KEY_BLACKLIST.has(key) && key[0] !== "_";
+    }
+    function getKeys(node) {
+      return Object.keys(node).filter(filterKey);
+    }
+    function unionWith(additionalKeys) {
+      const retv = (
+        /** @type {{
+            [type: string]: ReadonlyArray<string>
+        }} */
+        Object.assign({}, KEYS2)
+      );
+      for (const type of Object.keys(additionalKeys)) {
+        if (Object.prototype.hasOwnProperty.call(retv, type)) {
+          const keys = new Set(additionalKeys[type]);
+          for (const key of retv[type]) {
+            keys.add(key);
+          }
+          retv[type] = Object.freeze(Array.from(keys));
+        } else {
+          retv[type] = Object.freeze(Array.from(additionalKeys[type]));
+        }
+      }
+      return Object.freeze(retv);
+    }
+    exports2.KEYS = KEYS2;
+    exports2.getKeys = getKeys;
+    exports2.unionWith = unionWith;
+  }
+});
+
+// node_modules/@eslint-community/eslint-utils/index.js
+var require_eslint_utils = __commonJS({
+  "node_modules/@eslint-community/eslint-utils/index.js"(exports2) {
+    "use strict";
+    Object.defineProperty(exports2, "__esModule", { value: true });
+    var eslintVisitorKeys = require_eslint_visitor_keys();
+    function getInnermostScope(initialScope, node) {
+      const location = (
+        /** @type {[number, number]} */
+        node.range[0]
+      );
+      let scope = initialScope;
+      let found = false;
+      do {
+        found = false;
+        for (const childScope of scope.childScopes) {
+          const range = (
+            /** @type {[number, number]} */
+            childScope.block.range
+          );
+          if (range[0] <= location && location < range[1]) {
+            scope = childScope;
+            found = true;
+            break;
+          }
+        }
+      } while (found);
+      return scope;
+    }
+    function findVariable(initialScope, nameOrNode) {
+      let name = "";
+      let scope = initialScope;
+      if (typeof nameOrNode === "string") {
+        name = nameOrNode;
+      } else {
+        name = nameOrNode.name;
+        scope = getInnermostScope(scope, nameOrNode);
+      }
+      while (scope != null) {
+        const variable = scope.set.get(name);
+        if (variable != null) {
+          return variable;
+        }
+        scope = scope.upper;
+      }
+      return null;
+    }
+    function negate(f) {
+      return (token) => !f(token);
+    }
+    function isPunctuatorTokenWithValue(token, value) {
+      return token.type === "Punctuator" && token.value === value;
+    }
+    function isArrowToken(token) {
+      return isPunctuatorTokenWithValue(token, "=>");
+    }
+    function isCommaToken(token) {
+      return isPunctuatorTokenWithValue(token, ",");
+    }
+    function isSemicolonToken(token) {
+      return isPunctuatorTokenWithValue(token, ";");
+    }
+    function isColonToken(token) {
+      return isPunctuatorTokenWithValue(token, ":");
+    }
+    function isOpeningParenToken(token) {
+      return isPunctuatorTokenWithValue(token, "(");
+    }
+    function isClosingParenToken(token) {
+      return isPunctuatorTokenWithValue(token, ")");
+    }
+    function isOpeningBracketToken(token) {
+      return isPunctuatorTokenWithValue(token, "[");
+    }
+    function isClosingBracketToken(token) {
+      return isPunctuatorTokenWithValue(token, "]");
+    }
+    function isOpeningBraceToken(token) {
+      return isPunctuatorTokenWithValue(token, "{");
+    }
+    function isClosingBraceToken(token) {
+      return isPunctuatorTokenWithValue(token, "}");
+    }
+    function isCommentToken(token) {
+      return ["Block", "Line", "Shebang"].includes(token.type);
+    }
+    var isNotArrowToken = negate(isArrowToken);
+    var isNotCommaToken = negate(isCommaToken);
+    var isNotSemicolonToken = negate(isSemicolonToken);
+    var isNotColonToken = negate(isColonToken);
+    var isNotOpeningParenToken = negate(isOpeningParenToken);
+    var isNotClosingParenToken = negate(isClosingParenToken);
+    var isNotOpeningBracketToken = negate(isOpeningBracketToken);
+    var isNotClosingBracketToken = negate(isClosingBracketToken);
+    var isNotOpeningBraceToken = negate(isOpeningBraceToken);
+    var isNotClosingBraceToken = negate(isClosingBraceToken);
+    var isNotCommentToken = negate(isCommentToken);
+    function getOpeningParenOfParams(node, sourceCode) {
+      return node.id ? (
+        /** @type {Token} */
+        sourceCode.getTokenAfter(node.id, isOpeningParenToken)
+      ) : (
+        /** @type {Token} */
+        sourceCode.getFirstToken(node, isOpeningParenToken)
+      );
+    }
+    function getFunctionHeadLocation(node, sourceCode) {
+      const parent = (
+        /** @type {RuleNode} */
+        node.parent
+      );
+      let start = null;
+      let end = null;
+      if (node.type === "ArrowFunctionExpression") {
+        const arrowToken = (
+          /** @type {Token} */
+          sourceCode.getTokenBefore(node.body, isArrowToken)
+        );
+        start = arrowToken.loc.start;
+        end = arrowToken.loc.end;
+      } else if (parent && (parent.type === "Property" || parent.type === "MethodDefinition" || parent.type === "PropertyDefinition")) {
+        start = /** @type {SourceLocation} */
+        parent.loc.start;
+        end = getOpeningParenOfParams(node, sourceCode).loc.start;
+      } else {
+        start = /** @type {SourceLocation} */
+        node.loc.start;
+        end = getOpeningParenOfParams(node, sourceCode).loc.start;
+      }
+      return {
+        start: { ...start },
+        end: { ...end }
+      };
+    }
+    var globalObject = typeof globalThis !== "undefined" ? globalThis : (
+      // @ts-ignore
+      typeof self !== "undefined" ? (
+        // @ts-ignore
+        self
+      ) : (
+        // @ts-ignore
+        typeof window !== "undefined" ? (
+          // @ts-ignore
+          window
+        ) : typeof global !== "undefined" ? global : {}
+      )
+    );
+    var builtinNames = Object.freeze(
+      /* @__PURE__ */ new Set([
+        "Array",
+        "ArrayBuffer",
+        "BigInt",
+        "BigInt64Array",
+        "BigUint64Array",
+        "Boolean",
+        "DataView",
+        "Date",
+        "decodeURI",
+        "decodeURIComponent",
+        "encodeURI",
+        "encodeURIComponent",
+        "escape",
+        "Float32Array",
+        "Float64Array",
+        "Function",
+        "Infinity",
+        "Int16Array",
+        "Int32Array",
+        "Int8Array",
+        "isFinite",
+        "isNaN",
+        "isPrototypeOf",
+        "JSON",
+        "Map",
+        "Math",
+        "NaN",
+        "Number",
+        "Object",
+        "parseFloat",
+        "parseInt",
+        "Promise",
+        "Proxy",
+        "Reflect",
+        "RegExp",
+        "Set",
+        "String",
+        "Symbol",
+        "Uint16Array",
+        "Uint32Array",
+        "Uint8Array",
+        "Uint8ClampedArray",
+        "undefined",
+        "unescape",
+        "WeakMap",
+        "WeakSet"
+      ])
+    );
+    var callAllowed = new Set(
+      [
+        Array.isArray,
+        Array.of,
+        Array.prototype.at,
+        Array.prototype.concat,
+        Array.prototype.entries,
+        Array.prototype.every,
+        Array.prototype.filter,
+        Array.prototype.find,
+        Array.prototype.findIndex,
+        Array.prototype.flat,
+        Array.prototype.includes,
+        Array.prototype.indexOf,
+        Array.prototype.join,
+        Array.prototype.keys,
+        Array.prototype.lastIndexOf,
+        Array.prototype.slice,
+        Array.prototype.some,
+        Array.prototype.toString,
+        Array.prototype.values,
+        typeof BigInt === "function" ? BigInt : void 0,
+        Boolean,
+        Date,
+        Date.parse,
+        decodeURI,
+        decodeURIComponent,
+        encodeURI,
+        encodeURIComponent,
+        escape,
+        isFinite,
+        isNaN,
+        // @ts-ignore
+        isPrototypeOf,
+        Map,
+        Map.prototype.entries,
+        Map.prototype.get,
+        Map.prototype.has,
+        Map.prototype.keys,
+        Map.prototype.values,
+        .../** @type {(keyof typeof Math)[]} */
+        Object.getOwnPropertyNames(Math).filter((k) => k !== "random").map((k) => Math[k]).filter((f) => typeof f === "function"),
+        Number,
+        Number.isFinite,
+        Number.isNaN,
+        Number.parseFloat,
+        Number.parseInt,
+        Number.prototype.toExponential,
+        Number.prototype.toFixed,
+        Number.prototype.toPrecision,
+        Number.prototype.toString,
+        Object,
+        Object.entries,
+        Object.is,
+        Object.isExtensible,
+        Object.isFrozen,
+        Object.isSealed,
+        Object.keys,
+        Object.values,
+        parseFloat,
+        parseInt,
+        RegExp,
+        Set,
+        Set.prototype.entries,
+        Set.prototype.has,
+        Set.prototype.keys,
+        Set.prototype.values,
+        String,
+        String.fromCharCode,
+        String.fromCodePoint,
+        String.raw,
+        String.prototype.at,
+        String.prototype.charAt,
+        String.prototype.charCodeAt,
+        String.prototype.codePointAt,
+        String.prototype.concat,
+        String.prototype.endsWith,
+        String.prototype.includes,
+        String.prototype.indexOf,
+        String.prototype.lastIndexOf,
+        String.prototype.normalize,
+        String.prototype.padEnd,
+        String.prototype.padStart,
+        String.prototype.slice,
+        String.prototype.startsWith,
+        String.prototype.substr,
+        String.prototype.substring,
+        String.prototype.toLowerCase,
+        String.prototype.toString,
+        String.prototype.toUpperCase,
+        String.prototype.trim,
+        String.prototype.trimEnd,
+        String.prototype.trimLeft,
+        String.prototype.trimRight,
+        String.prototype.trimStart,
+        Symbol.for,
+        Symbol.keyFor,
+        unescape
+      ].filter((f) => typeof f === "function")
+    );
+    var callPassThrough = /* @__PURE__ */ new Set([
+      Object.freeze,
+      Object.preventExtensions,
+      Object.seal
+    ]);
+    var getterAllowed = [
+      [Map, /* @__PURE__ */ new Set(["size"])],
+      [
+        RegExp,
+        /* @__PURE__ */ new Set([
+          "dotAll",
+          "flags",
+          "global",
+          "hasIndices",
+          "ignoreCase",
+          "multiline",
+          "source",
+          "sticky",
+          "unicode"
+        ])
+      ],
+      [Set, /* @__PURE__ */ new Set(["size"])]
+    ];
+    function getPropertyDescriptor(object, name) {
+      let x = object;
+      while ((typeof x === "object" || typeof x === "function") && x !== null) {
+        const d = Object.getOwnPropertyDescriptor(x, name);
+        if (d) {
+          return d;
+        }
+        x = Object.getPrototypeOf(x);
+      }
+      return null;
+    }
+    function isGetter(object, name) {
+      const d = getPropertyDescriptor(object, name);
+      return d != null && d.get != null;
+    }
+    function getElementValues(nodeList, initialScope) {
+      const valueList = [];
+      for (let i = 0; i < nodeList.length; ++i) {
+        const elementNode = nodeList[i];
+        if (elementNode == null) {
+          valueList.length = i + 1;
+        } else if (elementNode.type === "SpreadElement") {
+          const argument = getStaticValueR(elementNode.argument, initialScope);
+          if (argument == null) {
+            return null;
+          }
+          valueList.push(.../** @type {Iterable<any>} */
+          argument.value);
+        } else {
+          const element = getStaticValueR(elementNode, initialScope);
+          if (element == null) {
+            return null;
+          }
+          valueList.push(element.value);
+        }
+      }
+      return valueList;
+    }
+    function isBuiltinGlobal(variable) {
+      return variable != null && variable.defs.length === 0 && builtinNames.has(variable.name) && variable.name in globalObject;
+    }
+    function canBeConsideredConst(variable) {
+      if (variable.defs.length !== 1) {
+        return false;
+      }
+      const def = variable.defs[0];
+      return Boolean(
+        def.parent && def.type === "Variable" && (def.parent.kind === "const" || isEffectivelyConst(variable))
+      );
+    }
+    function isEffectivelyConst(variable) {
+      const refs = variable.references;
+      const inits = refs.filter((r) => r.init).length;
+      const reads = refs.filter((r) => r.isReadOnly()).length;
+      if (inits === 1 && reads + inits === refs.length) {
+        return true;
+      }
+      return false;
+    }
+    function hasMutationInProperty(variable, initialScope) {
+      for (const ref2 of variable.references) {
+        let node = (
+          /** @type {TSESTreeNode} */
+          ref2.identifier
+        );
+        while (node && node.parent && node.parent.type === "MemberExpression") {
+          node = node.parent;
+        }
+        if (!node || !node.parent) {
+          continue;
+        }
+        if (node.parent.type === "AssignmentExpression" && node.parent.left === node || node.parent.type === "UpdateExpression" && node.parent.argument === node) {
+          return true;
+        }
+        if (node.parent.type === "CallExpression" && node.parent.callee === node && node.type === "MemberExpression") {
+          const methodName = getStaticPropertyNameValue(node, initialScope);
+          if (isNameOfMutationArrayMethod(methodName)) {
+            return true;
+          }
+        }
+      }
+      return false;
+      function isNameOfMutationArrayMethod(methodName) {
+        if (methodName == null || methodName.value == null) {
+          return false;
+        }
+        const name = methodName.value;
+        return name === "copyWithin" || name === "fill" || name === "pop" || name === "push" || name === "reverse" || name === "shift" || name === "sort" || name === "splice" || name === "unshift";
+      }
+    }
+    var operations = Object.freeze({
+      ArrayExpression(node, initialScope) {
+        const elements = getElementValues(node.elements, initialScope);
+        return elements != null ? { value: elements } : null;
+      },
+      AssignmentExpression(node, initialScope) {
+        if (node.operator === "=") {
+          return getStaticValueR(node.right, initialScope);
+        }
+        return null;
+      },
+      //eslint-disable-next-line complexity
+      BinaryExpression(node, initialScope) {
+        if (node.operator === "in" || node.operator === "instanceof") {
+          return null;
+        }
+        const left = getStaticValueR(node.left, initialScope);
+        const right = getStaticValueR(node.right, initialScope);
+        if (left != null && right != null) {
+          switch (node.operator) {
+            case "==":
+              return { value: left.value == right.value };
+            //eslint-disable-line eqeqeq
+            case "!=":
+              return { value: left.value != right.value };
+            //eslint-disable-line eqeqeq
+            case "===":
+              return { value: left.value === right.value };
+            case "!==":
+              return { value: left.value !== right.value };
+            case "<":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value < /** @type {any} */
+                  right.value
+                )
+              };
+            case "<=":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value <= /** @type {any} */
+                  right.value
+                )
+              };
+            case ">":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value > /** @type {any} */
+                  right.value
+                )
+              };
+            case ">=":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value >= /** @type {any} */
+                  right.value
+                )
+              };
+            case "<<":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value << /** @type {any} */
+                  right.value
+                )
+              };
+            case ">>":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value >> /** @type {any} */
+                  right.value
+                )
+              };
+            case ">>>":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value >>> /** @type {any} */
+                  right.value
+                )
+              };
+            case "+":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value + /** @type {any} */
+                  right.value
+                )
+              };
+            case "-":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value - /** @type {any} */
+                  right.value
+                )
+              };
+            case "*":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value * /** @type {any} */
+                  right.value
+                )
+              };
+            case "/":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value / /** @type {any} */
+                  right.value
+                )
+              };
+            case "%":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value % /** @type {any} */
+                  right.value
+                )
+              };
+            case "**":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value ** /** @type {any} */
+                  right.value
+                )
+              };
+            case "|":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value | /** @type {any} */
+                  right.value
+                )
+              };
+            case "^":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value ^ /** @type {any} */
+                  right.value
+                )
+              };
+            case "&":
+              return {
+                value: (
+                  /** @type {any} */
+                  left.value & /** @type {any} */
+                  right.value
+                )
+              };
+          }
+        }
+        return null;
+      },
+      CallExpression(node, initialScope) {
+        const calleeNode = node.callee;
+        const args = getElementValues(node.arguments, initialScope);
+        if (args != null) {
+          if (calleeNode.type === "MemberExpression") {
+            if (calleeNode.property.type === "PrivateIdentifier") {
+              return null;
+            }
+            const object = getStaticValueR(calleeNode.object, initialScope);
+            if (object != null) {
+              if (object.value == null && (object.optional || node.optional)) {
+                return { value: void 0, optional: true };
+              }
+              const property = getStaticPropertyNameValue(
+                calleeNode,
+                initialScope
+              );
+              if (property != null) {
+                const receiver = (
+                  /** @type {Record<PropertyKey, (...args: any[]) => any>} */
+                  object.value
+                );
+                const methodName = (
+                  /** @type {PropertyKey} */
+                  property.value
+                );
+                if (callAllowed.has(receiver[methodName])) {
+                  return {
+                    value: receiver[methodName](...args)
+                  };
+                }
+                if (callPassThrough.has(receiver[methodName])) {
+                  return { value: args[0] };
+                }
+              }
+            }
+          } else {
+            const callee = getStaticValueR(calleeNode, initialScope);
+            if (callee != null) {
+              if (callee.value == null && node.optional) {
+                return { value: void 0, optional: true };
+              }
+              const func = (
+                /** @type {(...args: any[]) => any} */
+                callee.value
+              );
+              if (callAllowed.has(func)) {
+                return { value: func(...args) };
+              }
+              if (callPassThrough.has(func)) {
+                return { value: args[0] };
+              }
+            }
+          }
+        }
+        return null;
+      },
+      ConditionalExpression(node, initialScope) {
+        const test = getStaticValueR(node.test, initialScope);
+        if (test != null) {
+          return test.value ? getStaticValueR(node.consequent, initialScope) : getStaticValueR(node.alternate, initialScope);
+        }
+        return null;
+      },
+      ExpressionStatement(node, initialScope) {
+        return getStaticValueR(node.expression, initialScope);
+      },
+      Identifier(node, initialScope) {
+        if (initialScope != null) {
+          const variable = findVariable(initialScope, node);
+          if (variable != null) {
+            if (isBuiltinGlobal(variable)) {
+              return { value: globalObject[variable.name] };
+            }
+            if (canBeConsideredConst(variable)) {
+              const def = variable.defs[0];
+              if (
+                // TODO(mysticatea): don't support destructuring here.
+                def.node.id.type === "Identifier"
+              ) {
+                const init = getStaticValueR(
+                  def.node.init,
+                  initialScope
+                );
+                if (init && typeof init.value === "object" && init.value !== null) {
+                  if (hasMutationInProperty(variable, initialScope)) {
+                    return null;
+                  }
+                }
+                return init;
+              }
+            }
+          }
+        }
+        return null;
+      },
+      Literal(node) {
+        const literal2 = (
+          /** @type {Partial<Literal> & Partial<RegExpLiteral> & Partial<BigIntLiteral>} */
+          node
+        );
+        if ((literal2.regex != null || literal2.bigint != null) && literal2.value == null) {
+          return null;
+        }
+        return { value: literal2.value };
+      },
+      LogicalExpression(node, initialScope) {
+        const left = getStaticValueR(node.left, initialScope);
+        if (left != null) {
+          if (node.operator === "||" && Boolean(left.value) === true || node.operator === "&&" && Boolean(left.value) === false || node.operator === "??" && left.value != null) {
+            return left;
+          }
+          const right = getStaticValueR(node.right, initialScope);
+          if (right != null) {
+            return right;
+          }
+        }
+        return null;
+      },
+      MemberExpression(node, initialScope) {
+        if (node.property.type === "PrivateIdentifier") {
+          return null;
+        }
+        const object = getStaticValueR(node.object, initialScope);
+        if (object != null) {
+          if (object.value == null && (object.optional || node.optional)) {
+            return { value: void 0, optional: true };
+          }
+          const property = getStaticPropertyNameValue(node, initialScope);
+          if (property != null) {
+            if (!isGetter(
+              /** @type {object} */
+              object.value,
+              /** @type {PropertyKey} */
+              property.value
+            )) {
+              return {
+                value: (
+                  /** @type {Record<PropertyKey, unknown>} */
+                  object.value[
+                    /** @type {PropertyKey} */
+                    property.value
+                  ]
+                )
+              };
+            }
+            for (const [classFn, allowed] of getterAllowed) {
+              if (object.value instanceof classFn && allowed.has(
+                /** @type {string} */
+                property.value
+              )) {
+                return {
+                  value: (
+                    /** @type {Record<PropertyKey, unknown>} */
+                    object.value[
+                      /** @type {PropertyKey} */
+                      property.value
+                    ]
+                  )
+                };
+              }
+            }
+          }
+        }
+        return null;
+      },
+      ChainExpression(node, initialScope) {
+        const expression = getStaticValueR(node.expression, initialScope);
+        if (expression != null) {
+          return { value: expression.value };
+        }
+        return null;
+      },
+      NewExpression(node, initialScope) {
+        const callee = getStaticValueR(node.callee, initialScope);
+        const args = getElementValues(node.arguments, initialScope);
+        if (callee != null && args != null) {
+          const Func = (
+            /** @type {new (...args: any[]) => any} */
+            callee.value
+          );
+          if (callAllowed.has(Func)) {
+            return { value: new Func(...args) };
+          }
+        }
+        return null;
+      },
+      ObjectExpression(node, initialScope) {
+        const object = {};
+        for (const propertyNode of node.properties) {
+          if (propertyNode.type === "Property") {
+            if (propertyNode.kind !== "init") {
+              return null;
+            }
+            const key = getStaticPropertyNameValue(
+              propertyNode,
+              initialScope
+            );
+            const value = getStaticValueR(propertyNode.value, initialScope);
+            if (key == null || value == null) {
+              return null;
+            }
+            object[
+              /** @type {PropertyKey} */
+              key.value
+            ] = value.value;
+          } else if (propertyNode.type === "SpreadElement" || // @ts-expect-error -- Backward compatibility
+          propertyNode.type === "ExperimentalSpreadProperty") {
+            const argument = getStaticValueR(
+              propertyNode.argument,
+              initialScope
+            );
+            if (argument == null) {
+              return null;
+            }
+            Object.assign(object, argument.value);
+          } else {
+            return null;
+          }
+        }
+        return { value: object };
+      },
+      SequenceExpression(node, initialScope) {
+        const last = node.expressions[node.expressions.length - 1];
+        return getStaticValueR(last, initialScope);
+      },
+      TaggedTemplateExpression(node, initialScope) {
+        const tag = getStaticValueR(node.tag, initialScope);
+        const expressions = getElementValues(
+          node.quasi.expressions,
+          initialScope
+        );
+        if (tag != null && expressions != null) {
+          const func = (
+            /** @type {(...args: any[]) => any} */
+            tag.value
+          );
+          const strings = node.quasi.quasis.map((q) => q.value.cooked);
+          strings.raw = node.quasi.quasis.map((q) => q.value.raw);
+          if (func === String.raw) {
+            return { value: func(strings, ...expressions) };
+          }
+        }
+        return null;
+      },
+      TemplateLiteral(node, initialScope) {
+        const expressions = getElementValues(node.expressions, initialScope);
+        if (expressions != null) {
+          let value = node.quasis[0].value.cooked;
+          for (let i = 0; i < expressions.length; ++i) {
+            value += expressions[i];
+            value += /** @type {string} */
+            node.quasis[i + 1].value.cooked;
+          }
+          return { value };
+        }
+        return null;
+      },
+      UnaryExpression(node, initialScope) {
+        if (node.operator === "delete") {
+          return null;
+        }
+        if (node.operator === "void") {
+          return { value: void 0 };
+        }
+        const arg = getStaticValueR(node.argument, initialScope);
+        if (arg != null) {
+          switch (node.operator) {
+            case "-":
+              return { value: -/** @type {any} */
+              arg.value };
+            case "+":
+              return { value: +/** @type {any} */
+              arg.value };
+            //eslint-disable-line no-implicit-coercion
+            case "!":
+              return { value: !arg.value };
+            case "~":
+              return { value: ~/** @type {any} */
+              arg.value };
+            case "typeof":
+              return { value: typeof arg.value };
+          }
+        }
+        return null;
+      },
+      TSAsExpression(node, initialScope) {
+        return getStaticValueR(node.expression, initialScope);
+      },
+      TSSatisfiesExpression(node, initialScope) {
+        return getStaticValueR(node.expression, initialScope);
+      },
+      TSTypeAssertion(node, initialScope) {
+        return getStaticValueR(node.expression, initialScope);
+      },
+      TSNonNullExpression(node, initialScope) {
+        return getStaticValueR(node.expression, initialScope);
+      },
+      TSInstantiationExpression(node, initialScope) {
+        return getStaticValueR(node.expression, initialScope);
+      }
+    });
+    function getStaticValueR(node, initialScope) {
+      if (node != null && Object.hasOwnProperty.call(operations, node.type)) {
+        return (
+          /** @type {VisitorCallback<any>} */
+          operations[node.type](
+            /** @type {TSESTreeNode} */
+            node,
+            initialScope
+          )
+        );
+      }
+      return null;
+    }
+    function getStaticPropertyNameValue(node, initialScope) {
+      const nameNode = node.type === "Property" ? node.key : node.property;
+      if (node.computed) {
+        return getStaticValueR(nameNode, initialScope);
+      }
+      if (nameNode.type === "Identifier") {
+        return { value: nameNode.name };
+      }
+      if (nameNode.type === "Literal") {
+        if (
+          /** @type {Partial<BigIntLiteral>} */
+          nameNode.bigint
+        ) {
+          return { value: (
+            /** @type {BigIntLiteral} */
+            nameNode.bigint
+          ) };
+        }
+        return { value: String(nameNode.value) };
+      }
+      return null;
+    }
+    function getStaticValue(node, initialScope = null) {
+      try {
+        return getStaticValueR(node, initialScope);
+      } catch (_error) {
+        return null;
+      }
+    }
+    function getStringIfConstant(node, initialScope = null) {
+      if (node && node.type === "Literal" && node.value === null) {
+        const literal2 = (
+          /** @type {Partial<SimpleLiteral> & Partial<RegExpLiteral> & Partial<BigIntLiteral>} */
+          node
+        );
+        if (literal2.regex) {
+          return `/${literal2.regex.pattern}/${literal2.regex.flags}`;
+        }
+        if (literal2.bigint) {
+          return literal2.bigint;
+        }
+      }
+      const evaluated = getStaticValue(node, initialScope);
+      if (evaluated) {
+        try {
+          return String(evaluated.value);
+        } catch {
+        }
+      }
+      return null;
+    }
+    function getPropertyName(node, initialScope) {
+      switch (node.type) {
+        case "MemberExpression":
+          if (node.computed) {
+            return getStringIfConstant(node.property, initialScope);
+          }
+          if (node.property.type === "PrivateIdentifier") {
+            return null;
+          }
+          return (
+            /** @type {Partial<Identifier>} */
+            node.property.name
+          );
+        case "Property":
+        case "MethodDefinition":
+        case "PropertyDefinition":
+          if (node.computed) {
+            return getStringIfConstant(node.key, initialScope);
+          }
+          if (node.key.type === "Literal") {
+            return String(node.key.value);
+          }
+          if (node.key.type === "PrivateIdentifier") {
+            return null;
+          }
+          return (
+            /** @type {Partial<Identifier>} */
+            node.key.name
+          );
+      }
+      return null;
+    }
+    function getFunctionNameWithKind(node, sourceCode) {
+      const parent = (
+        /** @type {RuleNode} */
+        node.parent
+      );
+      if (!parent) {
+        return "";
+      }
+      const tokens = [];
+      const isObjectMethod = parent.type === "Property" && parent.value === node;
+      const isClassMethod = parent.type === "MethodDefinition" && parent.value === node;
+      const isClassFieldMethod = parent.type === "PropertyDefinition" && parent.value === node;
+      if (isClassMethod || isClassFieldMethod) {
+        if (parent.static) {
+          tokens.push("static");
+        }
+        if (parent.key.type === "PrivateIdentifier") {
+          tokens.push("private");
+        }
+      }
+      if (node.async) {
+        tokens.push("async");
+      }
+      if (node.generator) {
+        tokens.push("generator");
+      }
+      if (isObjectMethod || isClassMethod) {
+        if (parent.kind === "constructor") {
+          return "constructor";
+        }
+        if (parent.kind === "get") {
+          tokens.push("getter");
+        } else if (parent.kind === "set") {
+          tokens.push("setter");
+        } else {
+          tokens.push("method");
+        }
+      } else if (isClassFieldMethod) {
+        tokens.push("method");
+      } else {
+        if (node.type === "ArrowFunctionExpression") {
+          tokens.push("arrow");
+        }
+        tokens.push("function");
+      }
+      if (isObjectMethod || isClassMethod || isClassFieldMethod) {
+        if (parent.key.type === "PrivateIdentifier") {
+          tokens.push(`#${parent.key.name}`);
+        } else {
+          const name = getPropertyName(parent);
+          if (name) {
+            tokens.push(`'${name}'`);
+          } else if (sourceCode) {
+            const keyText = sourceCode.getText(parent.key);
+            if (!keyText.includes("\n")) {
+              tokens.push(`[${keyText}]`);
+            }
+          }
+        }
+      } else if (hasId(node)) {
+        tokens.push(`'${node.id.name}'`);
+      } else if (parent.type === "VariableDeclarator" && parent.id && parent.id.type === "Identifier") {
+        tokens.push(`'${parent.id.name}'`);
+      } else if ((parent.type === "AssignmentExpression" || parent.type === "AssignmentPattern") && parent.left && parent.left.type === "Identifier") {
+        tokens.push(`'${parent.left.name}'`);
+      } else if (parent.type === "ExportDefaultDeclaration" && parent.declaration === node) {
+        tokens.push("'default'");
+      }
+      return tokens.join(" ");
+    }
+    function hasId(node) {
+      return Boolean(
+        /** @type {Partial<FunctionDeclaration | FunctionExpression>} */
+        node.id
+      );
+    }
+    var typeConversionBinaryOps = Object.freeze(
+      /* @__PURE__ */ new Set([
+        "==",
+        "!=",
+        "<",
+        "<=",
+        ">",
+        ">=",
+        "<<",
+        ">>",
+        ">>>",
+        "+",
+        "-",
+        "*",
+        "/",
+        "%",
+        "|",
+        "^",
+        "&",
+        "in"
+      ])
+    );
+    var typeConversionUnaryOps = Object.freeze(/* @__PURE__ */ new Set(["-", "+", "!", "~"]));
+    function isNode(x) {
+      return x !== null && typeof x === "object" && typeof x.type === "string";
+    }
+    var visitor = Object.freeze(
+      Object.assign(/* @__PURE__ */ Object.create(null), {
+        /**
+         * @param {Node} node
+         * @param {HasSideEffectOptions} options
+         * @param {Record<string, string[]>} visitorKeys
+         */
+        $visit(node, options, visitorKeys) {
+          const { type } = node;
+          if (typeof /** @type {any} */
+          this[type] === "function") {
+            return (
+              /** @type {any} */
+              this[type](
+                node,
+                options,
+                visitorKeys
+              )
+            );
+          }
+          return this.$visitChildren(node, options, visitorKeys);
+        },
+        /**
+         * @param {Node} node
+         * @param {HasSideEffectOptions} options
+         * @param {Record<string, string[]>} visitorKeys
+         */
+        $visitChildren(node, options, visitorKeys) {
+          const { type } = node;
+          for (
+            const key of
+            /** @type {(keyof Node)[]} */
+            visitorKeys[type] || eslintVisitorKeys.getKeys(node)
+          ) {
+            const value = node[key];
+            if (Array.isArray(value)) {
+              for (const element of value) {
+                if (isNode(element) && this.$visit(element, options, visitorKeys)) {
+                  return true;
+                }
+              }
+            } else if (isNode(value) && this.$visit(value, options, visitorKeys)) {
+              return true;
+            }
+          }
+          return false;
+        },
+        ArrowFunctionExpression() {
+          return false;
+        },
+        AssignmentExpression() {
+          return true;
+        },
+        AwaitExpression() {
+          return true;
+        },
+        /**
+         * @param {BinaryExpression} node
+         * @param {HasSideEffectOptions} options
+         * @param {Record<string, string[]>} visitorKeys
+         */
+        BinaryExpression(node, options, visitorKeys) {
+          if (options.considerImplicitTypeConversion && typeConversionBinaryOps.has(node.operator) && (node.left.type !== "Literal" || node.right.type !== "Literal")) {
+            return true;
+          }
+          return this.$visitChildren(node, options, visitorKeys);
+        },
+        CallExpression() {
+          return true;
+        },
+        FunctionExpression() {
+          return false;
+        },
+        ImportExpression() {
+          return true;
+        },
+        /**
+         * @param {MemberExpression} node
+         * @param {HasSideEffectOptions} options
+         * @param {Record<string, string[]>} visitorKeys
+         */
+        MemberExpression(node, options, visitorKeys) {
+          if (options.considerGetters) {
+            return true;
+          }
+          if (options.considerImplicitTypeConversion && node.computed && node.property.type !== "Literal") {
+            return true;
+          }
+          return this.$visitChildren(node, options, visitorKeys);
+        },
+        /**
+         * @param {MethodDefinition} node
+         * @param {HasSideEffectOptions} options
+         * @param {Record<string, string[]>} visitorKeys
+         */
+        MethodDefinition(node, options, visitorKeys) {
+          if (options.considerImplicitTypeConversion && node.computed && node.key.type !== "Literal") {
+            return true;
+          }
+          return this.$visitChildren(node, options, visitorKeys);
+        },
+        NewExpression() {
+          return true;
+        },
+        /**
+         * @param {Property} node
+         * @param {HasSideEffectOptions} options
+         * @param {Record<string, string[]>} visitorKeys
+         */
+        Property(node, options, visitorKeys) {
+          if (options.considerImplicitTypeConversion && node.computed && node.key.type !== "Literal") {
+            return true;
+          }
+          return this.$visitChildren(node, options, visitorKeys);
+        },
+        /**
+         * @param {PropertyDefinition} node
+         * @param {HasSideEffectOptions} options
+         * @param {Record<string, string[]>} visitorKeys
+         */
+        PropertyDefinition(node, options, visitorKeys) {
+          if (options.considerImplicitTypeConversion && node.computed && node.key.type !== "Literal") {
+            return true;
+          }
+          return this.$visitChildren(node, options, visitorKeys);
+        },
+        /**
+         * @param {UnaryExpression} node
+         * @param {HasSideEffectOptions} options
+         * @param {Record<string, string[]>} visitorKeys
+         */
+        UnaryExpression(node, options, visitorKeys) {
+          if (node.operator === "delete") {
+            return true;
+          }
+          if (options.considerImplicitTypeConversion && typeConversionUnaryOps.has(node.operator) && node.argument.type !== "Literal") {
+            return true;
+          }
+          return this.$visitChildren(node, options, visitorKeys);
+        },
+        UpdateExpression() {
+          return true;
+        },
+        YieldExpression() {
+          return true;
+        }
+      })
+    );
+    function hasSideEffect(node, sourceCode, options = {}) {
+      const { considerGetters = false, considerImplicitTypeConversion = false } = options;
+      return visitor.$visit(
+        node,
+        { considerGetters, considerImplicitTypeConversion },
+        sourceCode.visitorKeys || eslintVisitorKeys.KEYS
+      );
+    }
+    function getParentSyntaxParen(node, sourceCode) {
+      const parent = (
+        /** @type {RuleNode} */
+        node.parent
+      );
+      if (!parent) {
+        return null;
+      }
+      switch (parent.type) {
+        case "CallExpression":
+        case "NewExpression":
+          if (parent.arguments.length === 1 && parent.arguments[0] === node) {
+            return sourceCode.getTokenAfter(
+              // @ts-expect-error https://github.com/typescript-eslint/typescript-eslint/pull/5384
+              parent.typeArguments || /** @type {RuleNode} */
+              /** @type {unknown} */
+              /** @type {TSNewExpression | TSCallExpression} */
+              parent.typeParameters || parent.callee,
+              isOpeningParenToken
+            );
+          }
+          return null;
+        case "DoWhileStatement":
+          if (parent.test === node) {
+            return sourceCode.getTokenAfter(
+              parent.body,
+              isOpeningParenToken
+            );
+          }
+          return null;
+        case "IfStatement":
+        case "WhileStatement":
+          if (parent.test === node) {
+            return sourceCode.getFirstToken(parent, 1);
+          }
+          return null;
+        case "ImportExpression":
+          if (parent.source === node) {
+            return sourceCode.getFirstToken(parent, 1);
+          }
+          return null;
+        case "SwitchStatement":
+          if (parent.discriminant === node) {
+            return sourceCode.getFirstToken(parent, 1);
+          }
+          return null;
+        case "WithStatement":
+          if (parent.object === node) {
+            return sourceCode.getFirstToken(parent, 1);
+          }
+          return null;
+        default:
+          return null;
+      }
+    }
+    function isParenthesized(timesOrNode, nodeOrSourceCode, optionalSourceCode) {
+      let times, node, sourceCode, maybeLeftParen, maybeRightParen;
+      if (typeof timesOrNode === "number") {
+        times = timesOrNode | 0;
+        node = /** @type {RuleNode} */
+        nodeOrSourceCode;
+        sourceCode = /** @type {SourceCode} */
+        optionalSourceCode;
+        if (!(times >= 1)) {
+          throw new TypeError("'times' should be a positive integer.");
+        }
+      } else {
+        times = 1;
+        node = /** @type {RuleNode} */
+        timesOrNode;
+        sourceCode = /** @type {SourceCode} */
+        nodeOrSourceCode;
+      }
+      if (node == null || // `Program` can't be parenthesized
+      node.parent == null || // `CatchClause.param` can't be parenthesized, example `try {} catch (error) {}`
+      node.parent.type === "CatchClause" && node.parent.param === node) {
+        return false;
+      }
+      maybeLeftParen = maybeRightParen = node;
+      do {
+        maybeLeftParen = sourceCode.getTokenBefore(maybeLeftParen);
+        maybeRightParen = sourceCode.getTokenAfter(maybeRightParen);
+      } while (maybeLeftParen != null && maybeRightParen != null && isOpeningParenToken(maybeLeftParen) && isClosingParenToken(maybeRightParen) && // Avoid false positive such as `if (a) {}`
+      maybeLeftParen !== getParentSyntaxParen(node, sourceCode) && --times > 0);
+      return times === 0;
+    }
+    var placeholder = /\$(?:[$&`']|[1-9][0-9]?)/gu;
+    var internal = /* @__PURE__ */ new WeakMap();
+    function isEscaped(str, index3) {
+      let escaped = false;
+      for (let i = index3 - 1; i >= 0 && str.charCodeAt(i) === 92; --i) {
+        escaped = !escaped;
+      }
+      return escaped;
+    }
+    function replaceS(matcher, str, replacement) {
+      const chunks = [];
+      let index3 = 0;
+      function replacer(key, match) {
+        switch (key) {
+          case "$$":
+            return "$";
+          case "$&":
+            return match[0];
+          case "$`":
+            return str.slice(0, match.index);
+          case "$'":
+            return str.slice(match.index + match[0].length);
+          default: {
+            const i = key.slice(1);
+            if (i in match) {
+              return match[
+                /** @type {any} */
+                i
+              ];
+            }
+            return key;
+          }
+        }
+      }
+      for (const match of matcher.execAll(str)) {
+        chunks.push(str.slice(index3, match.index));
+        chunks.push(
+          replacement.replace(placeholder, (key) => replacer(key, match))
+        );
+        index3 = match.index + match[0].length;
+      }
+      chunks.push(str.slice(index3));
+      return chunks.join("");
+    }
+    function replaceF(matcher, str, replace) {
+      const chunks = [];
+      let index3 = 0;
+      for (const match of matcher.execAll(str)) {
+        chunks.push(str.slice(index3, match.index));
+        chunks.push(
+          String(
+            replace(
+              .../** @type {[string, ...string[]]} */
+              /** @type {string[]} */
+              match,
+              match.index,
+              match.input
+            )
+          )
+        );
+        index3 = match.index + match[0].length;
+      }
+      chunks.push(str.slice(index3));
+      return chunks.join("");
+    }
+    var PatternMatcher = class {
+      /**
+       * Initialize this matcher.
+       * @param {RegExp} pattern The pattern to match.
+       * @param {{escaped?:boolean}} [options] The options.
+       */
+      constructor(pattern, options = {}) {
+        const { escaped = false } = options;
+        if (!(pattern instanceof RegExp)) {
+          throw new TypeError("'pattern' should be a RegExp instance.");
+        }
+        if (!pattern.flags.includes("g")) {
+          throw new Error("'pattern' should contains 'g' flag.");
+        }
+        internal.set(this, {
+          pattern: new RegExp(pattern.source, pattern.flags),
+          escaped: Boolean(escaped)
+        });
+      }
+      /**
+       * Find the pattern in a given string.
+       * @param {string} str The string to find.
+       * @returns {IterableIterator<RegExpExecArray>} The iterator which iterate the matched information.
+       */
+      *execAll(str) {
+        const { pattern, escaped } = (
+          /** @type {{pattern:RegExp,escaped:boolean}} */
+          internal.get(this)
+        );
+        let match = null;
+        let lastIndex = 0;
+        pattern.lastIndex = 0;
+        while ((match = pattern.exec(str)) != null) {
+          if (escaped || !isEscaped(str, match.index)) {
+            lastIndex = pattern.lastIndex;
+            yield match;
+            pattern.lastIndex = lastIndex;
+          }
+        }
+      }
+      /**
+       * Check whether the pattern is found in a given string.
+       * @param {string} str The string to check.
+       * @returns {boolean} `true` if the pattern was found in the string.
+       */
+      test(str) {
+        const it = this.execAll(str);
+        const ret = it.next();
+        return !ret.done;
+      }
+      /**
+       * Replace a given string.
+       * @param {string} str The string to be replaced.
+       * @param {(string|((...strs:string[])=>string))} replacer The string or function to replace. This is the same as the 2nd argument of `String.prototype.replace`.
+       * @returns {string} The replaced string.
+       */
+      [Symbol.replace](str, replacer) {
+        return typeof replacer === "function" ? replaceF(this, String(str), replacer) : replaceS(this, String(str), String(replacer));
+      }
+    };
+    var IMPORT_TYPE = /^(?:Import|Export(?:All|Default|Named))Declaration$/u;
+    function isHasSource(node) {
+      return IMPORT_TYPE.test(node.type) && /** @type {ImportDeclaration|ExportAllDeclaration|ExportNamedDeclaration} */
+      node.source != null;
+    }
+    var has = (
+      /** @type {<T>(traceMap: TraceMap<unknown>, v: T) => v is (string extends T ? string : T)} */
+      Function.call.bind(Object.hasOwnProperty)
+    );
+    var READ = /* @__PURE__ */ Symbol("read");
+    var CALL = /* @__PURE__ */ Symbol("call");
+    var CONSTRUCT = /* @__PURE__ */ Symbol("construct");
+    var ESM = /* @__PURE__ */ Symbol("esm");
+    var requireCall = { require: { [CALL]: true } };
+    function isModifiedGlobal(variable) {
+      return variable == null || variable.defs.length !== 0 || variable.references.some((r) => r.isWrite());
+    }
+    function isPassThrough(node) {
+      const parent = (
+        /** @type {TSESTreeNode} */
+        node.parent
+      );
+      if (parent) {
+        switch (parent.type) {
+          case "ConditionalExpression":
+            return parent.consequent === node || parent.alternate === node;
+          case "LogicalExpression":
+            return true;
+          case "SequenceExpression":
+            return parent.expressions[parent.expressions.length - 1] === node;
+          case "ChainExpression":
+            return true;
+          case "TSAsExpression":
+          case "TSSatisfiesExpression":
+          case "TSTypeAssertion":
+          case "TSNonNullExpression":
+          case "TSInstantiationExpression":
+            return true;
+          default:
+            return false;
+        }
+      }
+      return false;
+    }
+    var ReferenceTracker = class {
+      /**
+       * Initialize this tracker.
+       * @param {Scope} globalScope The global scope.
+       * @param {object} [options] The options.
+       * @param {"legacy"|"strict"} [options.mode="strict"] The mode to determine the ImportDeclaration's behavior for CJS modules.
+       * @param {string[]} [options.globalObjectNames=["global","globalThis","self","window"]] The variable names for Global Object.
+       */
+      constructor(globalScope, options = {}) {
+        const {
+          mode = "strict",
+          globalObjectNames = ["global", "globalThis", "self", "window"]
+        } = options;
+        this.variableStack = [];
+        this.globalScope = globalScope;
+        this.mode = mode;
+        this.globalObjectNames = globalObjectNames.slice(0);
+      }
+      /**
+       * Iterate the references of global variables.
+       * @template T
+       * @param {TraceMap<T>} traceMap The trace map.
+       * @returns {IterableIterator<TrackedReferences<T>>} The iterator to iterate references.
+       */
+      *iterateGlobalReferences(traceMap) {
+        for (const key of Object.keys(traceMap)) {
+          const nextTraceMap = traceMap[key];
+          const path = [key];
+          const variable = this.globalScope.set.get(key);
+          if (isModifiedGlobal(variable)) {
+            continue;
+          }
+          yield* this._iterateVariableReferences(
+            /** @type {Variable} */
+            variable,
+            path,
+            nextTraceMap,
+            true
+          );
+        }
+        for (const key of this.globalObjectNames) {
+          const path = [];
+          const variable = this.globalScope.set.get(key);
+          if (isModifiedGlobal(variable)) {
+            continue;
+          }
+          yield* this._iterateVariableReferences(
+            /** @type {Variable} */
+            variable,
+            path,
+            traceMap,
+            false
+          );
+        }
+      }
+      /**
+       * Iterate the references of CommonJS modules.
+       * @template T
+       * @param {TraceMap<T>} traceMap The trace map.
+       * @returns {IterableIterator<TrackedReferences<T>>} The iterator to iterate references.
+       */
+      *iterateCjsReferences(traceMap) {
+        for (const { node } of this.iterateGlobalReferences(requireCall)) {
+          const key = getStringIfConstant(
+            /** @type {CallExpression} */
+            node.arguments[0]
+          );
+          if (key == null || !has(traceMap, key)) {
+            continue;
+          }
+          const nextTraceMap = traceMap[key];
+          const path = [key];
+          if (nextTraceMap[READ]) {
+            yield {
+              node,
+              path,
+              type: READ,
+              info: nextTraceMap[READ]
+            };
+          }
+          yield* this._iteratePropertyReferences(
+            /** @type {CallExpression} */
+            node,
+            path,
+            nextTraceMap
+          );
+        }
+      }
+      /**
+       * Iterate the references of ES modules.
+       * @template T
+       * @param {TraceMap<T>} traceMap The trace map.
+       * @returns {IterableIterator<TrackedReferences<T>>} The iterator to iterate references.
+       */
+      *iterateEsmReferences(traceMap) {
+        const programNode = (
+          /** @type {Program} */
+          this.globalScope.block
+        );
+        for (const node of programNode.body) {
+          if (!isHasSource(node)) {
+            continue;
+          }
+          const moduleId = (
+            /** @type {string} */
+            node.source.value
+          );
+          if (!has(traceMap, moduleId)) {
+            continue;
+          }
+          const nextTraceMap = traceMap[moduleId];
+          const path = [moduleId];
+          if (nextTraceMap[READ]) {
+            yield {
+              // eslint-disable-next-line object-shorthand -- apply type
+              node: (
+                /** @type {RuleNode} */
+                node
+              ),
+              path,
+              type: READ,
+              info: nextTraceMap[READ]
+            };
+          }
+          if (node.type === "ExportAllDeclaration") {
+            for (const key of Object.keys(nextTraceMap)) {
+              const exportTraceMap = nextTraceMap[key];
+              if (exportTraceMap[READ]) {
+                yield {
+                  // eslint-disable-next-line object-shorthand -- apply type
+                  node: (
+                    /** @type {RuleNode} */
+                    node
+                  ),
+                  path: path.concat(key),
+                  type: READ,
+                  info: exportTraceMap[READ]
+                };
+              }
+            }
+          } else {
+            for (const specifier of node.specifiers) {
+              const esm = has(nextTraceMap, ESM);
+              const it = this._iterateImportReferences(
+                specifier,
+                path,
+                esm ? nextTraceMap : this.mode === "legacy" ? { default: nextTraceMap, ...nextTraceMap } : { default: nextTraceMap }
+              );
+              if (esm) {
+                yield* it;
+              } else {
+                for (const report of it) {
+                  report.path = report.path.filter(exceptDefault);
+                  if (report.path.length >= 2 || report.type !== READ) {
+                    yield report;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      /**
+       * Iterate the property references for a given expression AST node.
+       * @template T
+       * @param {Expression} node The expression AST node to iterate property references.
+       * @param {TraceMap<T>} traceMap The trace map.
+       * @returns {IterableIterator<TrackedReferences<T>>} The iterator to iterate property references.
+       */
+      *iteratePropertyReferences(node, traceMap) {
+        yield* this._iteratePropertyReferences(node, [], traceMap);
+      }
+      /**
+       * Iterate the references for a given variable.
+       * @private
+       * @template T
+       * @param {Variable} variable The variable to iterate that references.
+       * @param {string[]} path The current path.
+       * @param {TraceMapObject<T>} traceMap The trace map.
+       * @param {boolean} shouldReport = The flag to report those references.
+       * @returns {IterableIterator<TrackedReferences<T>>} The iterator to iterate references.
+       */
+      *_iterateVariableReferences(variable, path, traceMap, shouldReport) {
+        if (this.variableStack.includes(variable)) {
+          return;
+        }
+        this.variableStack.push(variable);
+        try {
+          for (const reference of variable.references) {
+            if (!reference.isRead()) {
+              continue;
+            }
+            const node = (
+              /** @type {RuleNode & Identifier} */
+              reference.identifier
+            );
+            if (shouldReport && traceMap[READ]) {
+              yield { node, path, type: READ, info: traceMap[READ] };
+            }
+            yield* this._iteratePropertyReferences(node, path, traceMap);
+          }
+        } finally {
+          this.variableStack.pop();
+        }
+      }
+      /**
+       * Iterate the references for a given AST node.
+       * @private
+       * @template T
+       * @param {Expression} rootNode The AST node to iterate references.
+       * @param {string[]} path The current path.
+       * @param {TraceMapObject<T>} traceMap The trace map.
+       * @returns {IterableIterator<TrackedReferences<T>>} The iterator to iterate references.
+       */
+      //eslint-disable-next-line complexity
+      *_iteratePropertyReferences(rootNode, path, traceMap) {
+        let node = rootNode;
+        while (isPassThrough(node)) {
+          node = node.parent;
+        }
+        const parent = (
+          /** @type {RuleNode} */
+          node.parent
+        );
+        if (!parent) {
+          return;
+        }
+        if (parent.type === "MemberExpression") {
+          if (parent.object === node) {
+            const key = getPropertyName(parent);
+            if (key == null || !has(traceMap, key)) {
+              return;
+            }
+            path = path.concat(key);
+            const nextTraceMap = traceMap[key];
+            if (nextTraceMap[READ]) {
+              yield {
+                node: parent,
+                path,
+                type: READ,
+                info: nextTraceMap[READ]
+              };
+            }
+            yield* this._iteratePropertyReferences(
+              parent,
+              path,
+              nextTraceMap
+            );
+          }
+          return;
+        }
+        if (parent.type === "CallExpression") {
+          if (parent.callee === node && traceMap[CALL]) {
+            yield { node: parent, path, type: CALL, info: traceMap[CALL] };
+          }
+          return;
+        }
+        if (parent.type === "NewExpression") {
+          if (parent.callee === node && traceMap[CONSTRUCT]) {
+            yield {
+              node: parent,
+              path,
+              type: CONSTRUCT,
+              info: traceMap[CONSTRUCT]
+            };
+          }
+          return;
+        }
+        if (parent.type === "AssignmentExpression") {
+          if (parent.right === node) {
+            yield* this._iterateLhsReferences(parent.left, path, traceMap);
+            yield* this._iteratePropertyReferences(parent, path, traceMap);
+          }
+          return;
+        }
+        if (parent.type === "AssignmentPattern") {
+          if (parent.right === node) {
+            yield* this._iterateLhsReferences(parent.left, path, traceMap);
+          }
+          return;
+        }
+        if (parent.type === "VariableDeclarator") {
+          if (parent.init === node) {
+            yield* this._iterateLhsReferences(parent.id, path, traceMap);
+          }
+        }
+      }
+      /**
+       * Iterate the references for a given Pattern node.
+       * @private
+       * @template T
+       * @param {Pattern} patternNode The Pattern node to iterate references.
+       * @param {string[]} path The current path.
+       * @param {TraceMapObject<T>} traceMap The trace map.
+       * @returns {IterableIterator<TrackedReferences<T>>} The iterator to iterate references.
+       */
+      *_iterateLhsReferences(patternNode, path, traceMap) {
+        if (patternNode.type === "Identifier") {
+          const variable = findVariable(this.globalScope, patternNode);
+          if (variable != null) {
+            yield* this._iterateVariableReferences(
+              variable,
+              path,
+              traceMap,
+              false
+            );
+          }
+          return;
+        }
+        if (patternNode.type === "ObjectPattern") {
+          for (const property of patternNode.properties) {
+            const key = getPropertyName(
+              /** @type {AssignmentProperty} */
+              property
+            );
+            if (key == null || !has(traceMap, key)) {
+              continue;
+            }
+            const nextPath = path.concat(key);
+            const nextTraceMap = traceMap[key];
+            if (nextTraceMap[READ]) {
+              yield {
+                node: (
+                  /** @type {RuleNode} */
+                  property
+                ),
+                path: nextPath,
+                type: READ,
+                info: nextTraceMap[READ]
+              };
+            }
+            yield* this._iterateLhsReferences(
+              /** @type {AssignmentProperty} */
+              property.value,
+              nextPath,
+              nextTraceMap
+            );
+          }
+          return;
+        }
+        if (patternNode.type === "AssignmentPattern") {
+          yield* this._iterateLhsReferences(patternNode.left, path, traceMap);
+        }
+      }
+      /**
+       * Iterate the references for a given ModuleSpecifier node.
+       * @private
+       * @template T
+       * @param {ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier | ExportSpecifier} specifierNode The ModuleSpecifier node to iterate references.
+       * @param {string[]} path The current path.
+       * @param {TraceMapObject<T>} traceMap The trace map.
+       * @returns {IterableIterator<TrackedReferences<T>>} The iterator to iterate references.
+       */
+      *_iterateImportReferences(specifierNode, path, traceMap) {
+        const type = specifierNode.type;
+        if (type === "ImportSpecifier" || type === "ImportDefaultSpecifier") {
+          const key = type === "ImportDefaultSpecifier" ? "default" : specifierNode.imported.type === "Identifier" ? specifierNode.imported.name : specifierNode.imported.value;
+          if (!has(traceMap, key)) {
+            return;
+          }
+          path = path.concat(key);
+          const nextTraceMap = traceMap[key];
+          if (nextTraceMap[READ]) {
+            yield {
+              node: (
+                /** @type {RuleNode} */
+                specifierNode
+              ),
+              path,
+              type: READ,
+              info: nextTraceMap[READ]
+            };
+          }
+          yield* this._iterateVariableReferences(
+            /** @type {Variable} */
+            findVariable(this.globalScope, specifierNode.local),
+            path,
+            nextTraceMap,
+            false
+          );
+          return;
+        }
+        if (type === "ImportNamespaceSpecifier") {
+          yield* this._iterateVariableReferences(
+            /** @type {Variable} */
+            findVariable(this.globalScope, specifierNode.local),
+            path,
+            traceMap,
+            false
+          );
+          return;
+        }
+        if (type === "ExportSpecifier") {
+          const key = specifierNode.local.type === "Identifier" ? specifierNode.local.name : specifierNode.local.value;
+          if (!has(traceMap, key)) {
+            return;
+          }
+          path = path.concat(key);
+          const nextTraceMap = traceMap[key];
+          if (nextTraceMap[READ]) {
+            yield {
+              node: (
+                /** @type {RuleNode} */
+                specifierNode
+              ),
+              path,
+              type: READ,
+              info: nextTraceMap[READ]
+            };
+          }
+        }
+      }
+    };
+    ReferenceTracker.READ = READ;
+    ReferenceTracker.CALL = CALL;
+    ReferenceTracker.CONSTRUCT = CONSTRUCT;
+    ReferenceTracker.ESM = ESM;
+    function exceptDefault(name, index3) {
+      return !(index3 === 1 && name === "default");
+    }
+    var index2 = {
+      CALL,
+      CONSTRUCT,
+      ESM,
+      findVariable,
+      getFunctionHeadLocation,
+      getFunctionNameWithKind,
+      getInnermostScope,
+      getPropertyName,
+      getStaticValue,
+      getStringIfConstant,
+      hasSideEffect,
+      isArrowToken,
+      isClosingBraceToken,
+      isClosingBracketToken,
+      isClosingParenToken,
+      isColonToken,
+      isCommaToken,
+      isCommentToken,
+      isNotArrowToken,
+      isNotClosingBraceToken,
+      isNotClosingBracketToken,
+      isNotClosingParenToken,
+      isNotColonToken,
+      isNotCommaToken,
+      isNotCommentToken,
+      isNotOpeningBraceToken,
+      isNotOpeningBracketToken,
+      isNotOpeningParenToken,
+      isNotSemicolonToken,
+      isOpeningBraceToken,
+      isOpeningBracketToken,
+      isOpeningParenToken,
+      isParenthesized,
+      isSemicolonToken,
+      PatternMatcher,
+      READ,
+      ReferenceTracker
+    };
+    exports2.CALL = CALL;
+    exports2.CONSTRUCT = CONSTRUCT;
+    exports2.ESM = ESM;
+    exports2.PatternMatcher = PatternMatcher;
+    exports2.READ = READ;
+    exports2.ReferenceTracker = ReferenceTracker;
+    exports2["default"] = index2;
+    exports2.findVariable = findVariable;
+    exports2.getFunctionHeadLocation = getFunctionHeadLocation;
+    exports2.getFunctionNameWithKind = getFunctionNameWithKind;
+    exports2.getInnermostScope = getInnermostScope;
+    exports2.getPropertyName = getPropertyName;
+    exports2.getStaticValue = getStaticValue;
+    exports2.getStringIfConstant = getStringIfConstant;
+    exports2.hasSideEffect = hasSideEffect;
+    exports2.isArrowToken = isArrowToken;
+    exports2.isClosingBraceToken = isClosingBraceToken;
+    exports2.isClosingBracketToken = isClosingBracketToken;
+    exports2.isClosingParenToken = isClosingParenToken;
+    exports2.isColonToken = isColonToken;
+    exports2.isCommaToken = isCommaToken;
+    exports2.isCommentToken = isCommentToken;
+    exports2.isNotArrowToken = isNotArrowToken;
+    exports2.isNotClosingBraceToken = isNotClosingBraceToken;
+    exports2.isNotClosingBracketToken = isNotClosingBracketToken;
+    exports2.isNotClosingParenToken = isNotClosingParenToken;
+    exports2.isNotColonToken = isNotColonToken;
+    exports2.isNotCommaToken = isNotCommaToken;
+    exports2.isNotCommentToken = isNotCommentToken;
+    exports2.isNotOpeningBraceToken = isNotOpeningBraceToken;
+    exports2.isNotOpeningBracketToken = isNotOpeningBracketToken;
+    exports2.isNotOpeningParenToken = isNotOpeningParenToken;
+    exports2.isNotSemicolonToken = isNotSemicolonToken;
+    exports2.isOpeningBraceToken = isOpeningBraceToken;
+    exports2.isOpeningBracketToken = isOpeningBracketToken;
+    exports2.isOpeningParenToken = isOpeningParenToken;
+    exports2.isParenthesized = isParenthesized;
+    exports2.isSemicolonToken = isSemicolonToken;
+  }
+});
+
 // node_modules/@typescript-eslint/types/dist/generated/ast-spec.js
 var require_ast_spec = __commonJS({
   "node_modules/@typescript-eslint/types/dist/generated/ast-spec.js"(exports2) {
@@ -243,7 +2570,7 @@ var require_parser_options = __commonJS({
 });
 
 // node_modules/@typescript-eslint/types/dist/ts-estree.js
-var require_ts_estree2 = __commonJS({
+var require_ts_estree = __commonJS({
   "node_modules/@typescript-eslint/types/dist/ts-estree.js"(exports2) {
     "use strict";
     var __createBinding = exports2 && exports2.__createBinding || (Object.create ? (function(o, m, k, k2) {
@@ -320,7 +2647,7 @@ var require_dist = __commonJS({
     } });
     __exportStar(require_lib(), exports2);
     __exportStar(require_parser_options(), exports2);
-    __exportStar(require_ts_estree2(), exports2);
+    __exportStar(require_ts_estree(), exports2);
   }
 });
 
@@ -588,8 +2915,8 @@ var require_xhtml = __commonJS({
 // node_modules/acorn/dist/acorn.js
 var require_acorn = __commonJS({
   "node_modules/acorn/dist/acorn.js"(exports2, module2) {
-    (function(global, factory) {
-      typeof exports2 === "object" && typeof module2 !== "undefined" ? factory(exports2) : typeof define === "function" && define.amd ? define(["exports"], factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, factory(global.acorn = {}));
+    (function(global2, factory) {
+      typeof exports2 === "object" && typeof module2 !== "undefined" ? factory(exports2) : typeof define === "function" && define.amd ? define(["exports"], factory) : (global2 = typeof globalThis !== "undefined" ? globalThis : global2 || self, factory(global2.acorn = {}));
     })(exports2, (function(exports3) {
       "use strict";
       var astralIdentifierCodes2 = [509, 0, 227, 0, 150, 4, 294, 9, 1368, 2, 2, 1, 6, 3, 41, 2, 5, 0, 166, 1, 574, 3, 9, 9, 7, 9, 32, 4, 318, 1, 80, 3, 71, 10, 50, 3, 123, 2, 54, 14, 32, 10, 3, 1, 11, 3, 46, 10, 8, 0, 46, 9, 7, 2, 37, 13, 2, 9, 6, 1, 45, 0, 13, 2, 49, 13, 9, 3, 2, 11, 83, 11, 7, 0, 3, 0, 158, 11, 6, 9, 7, 3, 56, 1, 2, 6, 3, 1, 3, 2, 10, 0, 11, 1, 3, 6, 4, 4, 68, 8, 2, 0, 3, 0, 2, 3, 2, 4, 2, 0, 15, 1, 83, 17, 10, 9, 5, 0, 82, 19, 13, 9, 214, 6, 3, 8, 28, 1, 83, 16, 16, 9, 82, 12, 9, 9, 7, 19, 58, 14, 5, 9, 243, 14, 166, 9, 71, 5, 2, 1, 3, 3, 2, 0, 2, 1, 13, 9, 120, 6, 3, 6, 4, 0, 29, 9, 41, 6, 2, 3, 9, 0, 10, 10, 47, 15, 343, 9, 54, 7, 2, 7, 17, 9, 57, 21, 2, 13, 123, 5, 4, 0, 2, 1, 2, 6, 2, 0, 9, 9, 49, 4, 2, 1, 2, 4, 9, 9, 330, 3, 10, 1, 2, 0, 49, 6, 4, 4, 14, 10, 5350, 0, 7, 14, 11465, 27, 2343, 9, 87, 9, 39, 4, 60, 6, 26, 9, 535, 9, 470, 0, 2, 54, 8, 3, 82, 0, 12, 1, 19628, 1, 4178, 9, 519, 45, 3, 22, 543, 4, 4, 5, 9, 7, 3, 6, 31, 3, 149, 2, 1418, 49, 513, 54, 5, 49, 9, 0, 15, 0, 23, 4, 2, 14, 1361, 6, 2, 16, 3, 6, 2, 1, 2, 4, 101, 0, 161, 6, 10, 9, 357, 0, 62, 13, 499, 13, 245, 1, 2, 9, 726, 6, 110, 6, 6, 9, 4759, 9, 787719, 239];
@@ -8858,7 +11185,7 @@ var require_astUtilities = /* @__PURE__ */ __commonJSMin(((exports2) => {
   })();
   Object.defineProperty(exports2, "__esModule", { value: true });
   exports2.isParenthesized = exports2.hasSideEffect = exports2.getStringIfConstant = exports2.getStaticValue = exports2.getPropertyName = exports2.getFunctionNameWithKind = exports2.getFunctionHeadLocation = void 0;
-  const eslintUtils$4 = __importStar(__require("@eslint-community/eslint-utils"));
+  const eslintUtils$4 = __importStar(require_eslint_utils());
   exports2.getFunctionHeadLocation = eslintUtils$4.getFunctionHeadLocation;
   exports2.getFunctionNameWithKind = eslintUtils$4.getFunctionNameWithKind;
   exports2.getPropertyName = eslintUtils$4.getPropertyName;
@@ -8911,7 +11238,7 @@ var require_PatternMatcher = /* @__PURE__ */ __commonJSMin(((exports2) => {
   })();
   Object.defineProperty(exports2, "__esModule", { value: true });
   exports2.PatternMatcher = void 0;
-  exports2.PatternMatcher = __importStar(__require("@eslint-community/eslint-utils")).PatternMatcher;
+  exports2.PatternMatcher = __importStar(require_eslint_utils()).PatternMatcher;
 }));
 var require_predicates$1 = /* @__PURE__ */ __commonJSMin(((exports2) => {
   var __createBinding = exports2 && exports2.__createBinding || (Object.create ? (function(o, m, k, k2) {
@@ -8957,7 +11284,7 @@ var require_predicates$1 = /* @__PURE__ */ __commonJSMin(((exports2) => {
   })();
   Object.defineProperty(exports2, "__esModule", { value: true });
   exports2.isNotSemicolonToken = exports2.isSemicolonToken = exports2.isNotOpeningParenToken = exports2.isOpeningParenToken = exports2.isNotOpeningBracketToken = exports2.isOpeningBracketToken = exports2.isNotOpeningBraceToken = exports2.isOpeningBraceToken = exports2.isNotCommentToken = exports2.isCommentToken = exports2.isNotCommaToken = exports2.isCommaToken = exports2.isNotColonToken = exports2.isColonToken = exports2.isNotClosingParenToken = exports2.isClosingParenToken = exports2.isNotClosingBracketToken = exports2.isClosingBracketToken = exports2.isNotClosingBraceToken = exports2.isClosingBraceToken = exports2.isNotArrowToken = exports2.isArrowToken = void 0;
-  const eslintUtils$2 = __importStar(__require("@eslint-community/eslint-utils"));
+  const eslintUtils$2 = __importStar(require_eslint_utils());
   exports2.isArrowToken = eslintUtils$2.isArrowToken;
   exports2.isNotArrowToken = eslintUtils$2.isNotArrowToken;
   exports2.isClosingBraceToken = eslintUtils$2.isClosingBraceToken;
@@ -9025,7 +11352,7 @@ var require_ReferenceTracker = /* @__PURE__ */ __commonJSMin(((exports2) => {
   })();
   Object.defineProperty(exports2, "__esModule", { value: true });
   exports2.ReferenceTracker = void 0;
-  const eslintUtils$1 = __importStar(__require("@eslint-community/eslint-utils"));
+  const eslintUtils$1 = __importStar(require_eslint_utils());
   eslintUtils$1.ReferenceTracker.READ;
   eslintUtils$1.ReferenceTracker.CALL;
   eslintUtils$1.ReferenceTracker.CONSTRUCT;
@@ -9076,11 +11403,11 @@ var require_scopeAnalysis = /* @__PURE__ */ __commonJSMin(((exports2) => {
   })();
   Object.defineProperty(exports2, "__esModule", { value: true });
   exports2.getInnermostScope = exports2.findVariable = void 0;
-  const eslintUtils = __importStar(__require("@eslint-community/eslint-utils"));
+  const eslintUtils = __importStar(require_eslint_utils());
   exports2.findVariable = eslintUtils.findVariable;
   exports2.getInnermostScope = eslintUtils.getInnermostScope;
 }));
-var require_eslint_utils = /* @__PURE__ */ __commonJSMin(((exports2) => {
+var require_eslint_utils2 = /* @__PURE__ */ __commonJSMin(((exports2) => {
   var __createBinding = exports2 && exports2.__createBinding || (Object.create ? (function(o, m, k, k2) {
     if (k2 === void 0) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -9134,10 +11461,10 @@ var require_misc = /* @__PURE__ */ __commonJSMin(((exports2) => {
     return left.loc.end.line === right.loc.start.line;
   }
 }));
-var require_ts_estree = /* @__PURE__ */ __commonJSMin(((exports2) => {
+var require_ts_estree2 = /* @__PURE__ */ __commonJSMin(((exports2) => {
   Object.defineProperty(exports2, "__esModule", { value: true });
   exports2.TSESTree = exports2.AST_TOKEN_TYPES = exports2.AST_NODE_TYPES = void 0;
-  var types_1 = __require("@typescript-eslint/types");
+  var types_1 = require_dist();
   Object.defineProperty(exports2, "AST_NODE_TYPES", {
     enumerable: true,
     get: function() {
@@ -9161,7 +11488,7 @@ var require_predicates = /* @__PURE__ */ __commonJSMin(((exports2) => {
   Object.defineProperty(exports2, "__esModule", { value: true });
   exports2.isLoop = exports2.isImportKeyword = exports2.isTypeKeyword = exports2.isAwaitKeyword = exports2.isAwaitExpression = exports2.isIdentifier = exports2.isConstructor = exports2.isClassOrTypeElement = exports2.isTSConstructorType = exports2.isTSFunctionType = exports2.isFunctionOrFunctionType = exports2.isFunctionType = exports2.isFunction = exports2.isVariableDeclarator = exports2.isTypeAssertion = exports2.isLogicalOrOperator = exports2.isOptionalCallExpression = exports2.isNotNonNullAssertionPunctuator = exports2.isNonNullAssertionPunctuator = exports2.isNotOptionalChainPunctuator = exports2.isOptionalChainPunctuator = void 0;
   exports2.isSetter = isSetter;
-  const ts_estree_1 = require_ts_estree();
+  const ts_estree_1 = require_ts_estree2();
   const helpers_1 = require_helpers();
   exports2.isOptionalChainPunctuator = (0, helpers_1.isTokenOfTypeWithConditions)(ts_estree_1.AST_TOKEN_TYPES.Punctuator, { value: "?." });
   exports2.isNotOptionalChainPunctuator = (0, helpers_1.isNotTokenOfTypeWithConditions)(ts_estree_1.AST_TOKEN_TYPES.Punctuator, { value: "?." });
@@ -9239,7 +11566,7 @@ var require_ast_utils = /* @__PURE__ */ __commonJSMin(((exports2) => {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports$1, p)) __createBinding(exports$1, m, p);
   };
   Object.defineProperty(exports2, "__esModule", { value: true });
-  __exportStar(require_eslint_utils(), exports2);
+  __exportStar(require_eslint_utils2(), exports2);
   __exportStar(require_helpers(), exports2);
   __exportStar(require_misc(), exports2);
   __exportStar(require_predicates(), exports2);
@@ -29687,11 +32014,11 @@ var space_unary_ops_default = createRule({
 });
 
 // node_modules/@stylistic/eslint-plugin/dist/rules/spaced-comment.js
-function escape(s) {
+function escape2(s) {
   return `(?:${escapeStringRegexp(s)})`;
 }
 function escapeAndRepeat(s) {
-  return `${escape(s)}+`;
+  return `${escape2(s)}+`;
 }
 function parseMarkersOption(markers) {
   if (!markers.includes("*")) return markers.concat("*");
@@ -29714,10 +32041,10 @@ function createExceptionsPattern(exceptions) {
 }
 function createAlwaysStylePattern(markers, exceptions) {
   let pattern = "^";
-  if (markers.length === 1) pattern += escape(markers[0]);
+  if (markers.length === 1) pattern += escape2(markers[0]);
   else {
     pattern += "(?:";
-    pattern += markers.map(escape).join("|");
+    pattern += markers.map(escape2).join("|");
     pattern += ")";
   }
   pattern += "?";
@@ -29725,7 +32052,7 @@ function createAlwaysStylePattern(markers, exceptions) {
   return new RegExp(pattern, "u");
 }
 function createNeverStylePattern(markers) {
-  const pattern = `^(${markers.map(escape).join("|")})?[ 	]+`;
+  const pattern = `^(${markers.map(escape2).join("|")})?[ 	]+`;
   return new RegExp(pattern, "u");
 }
 var spaced_comment_default = createRule({
@@ -29802,7 +32129,7 @@ var spaced_comment_default = createRule({
         beginRegex: requireSpace ? createAlwaysStylePattern(markers, exceptions) : createNeverStylePattern(markers),
         endRegex: balanced && requireSpace ? new RegExp(`${createExceptionsPattern(exceptions)}$`, "u") : /* @__PURE__ */ new RegExp("[ 	]+$", "u"),
         hasExceptions: exceptions.length > 0,
-        captureMarker: new RegExp(`^(${markers.map(escape).join("|")})`, "u"),
+        captureMarker: new RegExp(`^(${markers.map(escape2).join("|")})`, "u"),
         markers: new Set(markers)
       };
       return rule;
